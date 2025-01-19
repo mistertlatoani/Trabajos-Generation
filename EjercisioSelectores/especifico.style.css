@@ -1,0 +1,38 @@
+/**{
+background-color: aquamarines;
+}*/
+h1{
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    color: rgb(72, 30, 210) !important;
+}
+
+/*Cascada es un metodo que utiliza CSSpara definir que estilos aplicara, y aplica los ultimos estilos declarados y el segundo metodo para decidir*/
+
+h1#title{ /*especificidad es el primer metodo de CSS para decidir que estilo aplicar*/
+
+    color: chartreuse;
+}
+
+#title{
+    color: cornflowerblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    background-color: black;
+}
+
+
+/* Herencia */
+body{
+  border: 5px solid blueviolet;
+  font-family: cursive;
+  color: deeppink;
+}
+
+h1{
+  color: rgb(158, 25, 25);
+}
