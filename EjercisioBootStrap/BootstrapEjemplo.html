@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Enlace del CDN de CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header>
+        <h1>Hello, world!</h1>
+    </header>
+
+    <!-- Contenedores -->
+    <div class="container" style="background-color: cornflowerblue;">
+        <h1>Contenedor 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa et quidem delectus? Quibusdam qui cum possimus. Libero minima voluptas deleniti eligendi quas alias! Fugit in incidunt iusto, quia minima ducimus.</p>
+    </div>
+    <div class="container-fluid" style="background-color: palevioletred;">
+        Contenedor 2
+    </div>
+
+    <!-- Contenedor con breakpoint específico. En pantallas xs,s y md ocupará todo el ancho disponible, mientras que en pantallas lg, xl y xxl tendrá un ancho específico, que no es el 100% -->
+    <div class="container-lg" style="background-color: olivedrab;">
+        Contenedor 3
+    </div>
+
+    <!-- GRID -->
+    <!-- Cada fila está dividida en 12 columnas, que se pueden distribuir de diferentes maneras 
+    Row- Fila - Horizontal
+    Col - columna - vertical-->
+    <main>
+        <div class="container">
+            <div class="row">
+                <!-- Cuando no hay especificación en el tamaño de columnas, se reparte el espacio de manera equitativa -->
+                <div class="col"> Columna 1 
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque nostrum deleniti labore. Nam, iure ipsum. Tempora nesciunt, et sapiente quia temporibus officiis maxime necessitatibus voluptatum neque porro ea unde.</p>
+                </div>
+                <div class="col"> Columna 2
+                    <ol>
+                        <li> "Mort - Terry Prachett" </li>
+                        <li> "Clean code - Martin Robertson" </li>
+                        <li> "Los recuerdos del porvenir" - Elena Garro </li>
+                        <li> "100 años de soledad" - Gabriel García Márquez</li>
+                        <li> "Padre rico, padre pobre" - Robert Kiyosaki y Sharon Lechter </li>
+                    </ol>
+
+                </div>
+                <div class="col"> Columna 3
+                    <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/800px-Twemoji_1f600.svg.png" alt="Emoji de cara feliz con ojos sonrientes">
+                
+                    <div class="row">
+                        <div class="col border"> Información técnica
+                        <p> Nombre unicode: Cara Feliz Con Ojos Sonrientes. Se le conoce con los nombres: ^^, Happy Face, Smile, Smiley Face  </p>
+                        </div>
+                        <div class="col border"> Datos curiosos 
+                            <p>En Snapchat, este emoji junto a un contacto denota que envías mensajes a esa persona con frecuencia, pero que no es tu mejor amigo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 12 columnas -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <!-- Puedo poner más de 12 columnas y Bootstrap lo permitirá, a menos que especifique un tamaño, ahí se cuentan las 12 columnas y si se excede, dará un salto de línea para poner las columnas sobrantes en una nueva fila-->
+                <!-- <div class="col">13</div>
+                <div class="col">14</div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Columnas con anchos diferentes -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-1 border"> A </div>
+                <div class="col-2 border"> B </div>
+                <div class="col-3 border"> C </div>
+                <div class="col-6 border"> D </div>
+                <!-- Cuando se excede las 12 columnas por que se coloca un tamaño determinado a las columnas, la colunma excedente se pasa a una nueva fila-->
+                 <!-- <div class="col-6 border" style="background : deeppink: > E < </div>"-->
+            </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+            <div class="col-12 col-md6 border" style="background-color: aqua;"> 
+              “Dios no juega a los dados con el universo; Él juega un juego inefable de su propia invención, que podría compararse, desde la perspectiva de cualquiera de los otros jugadores, con estar involucrado en una versión oscura y compleja del póker en una habitación completamente a oscuras, con cartas en blanco, por apuestas infinitas, con un Crupier que no te dirá las reglas y que sonríe todo el tiempo.”
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 border" style="background-color: chocolate;"> 
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente explicabo provident illum ipsum a repellendus reiciendis, quidem perspiciatis ex recusandae reprehenderit nesciunt, facere temporibus ab similique? Tempore optio repellendus aliquid!
+            </div>
+            <div class="col-12 border"> C 
+
+            </div>
+            <div class="col-6 border"> D </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div> class="row">
+          <div class="row">
+
+          </div>
+        <div class="col border">
+        “Dios no juega a los dados con el universo; Él juega un juego inefable de su propia invención, que podría compararse, desde la perspectiva de cualquiera de los otros jugadores, con estar involucrado en una versión oscura y compleja del póker en una habitación completamente a oscuras, con cartas en blanco, por apuestas infinitas, con un Crupier que no te dirá las reglas y que sonríe todo el tiempo.”</div>
+        <div class="col border">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet aliquam voluptates quidem! Similique odit architecto, ut, minima nisi praesentium temporibus optio laborum labore impedit itaque cupiditate iure amet aliquid.
+        </div>
+        <div class="col border">
+          "El problema de tener una mente abierta, por supuesto, es que la gente insistirá en venir y tratar de poner cosas en ella. La inspiración suele ser una partícula fugaz que revolotea, pero a veces cae como ladrillos."
+        </div>
+        <div></div>
+    </section>
+    
+    
+    <!-- Enlace de CDN de JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
